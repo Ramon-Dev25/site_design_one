@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* FONTE ENTRE 400 A 700 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Afacad", sans-serif;
+}
+
+:root {
+    --text-color: #fff;
+    --text-secondary-color: #444444;
+    --almost-transparent-gray: #4444444b;
+    --bg-color: #d6d6d6;
+    --main-color: #067c41;
+    --secondary-color: #10a55b;
+}
+
+
+/* Estilos gerais */
+body {
+    position: relative;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-secondary-color);
+    font-family: "Afacad", sans-serif;
+}
+
+/* INICIO MENU SUPERIOR */
+
+header {
+    position: relative;
+    padding: 1rem;
+    margin-left: 70px;
+}
+
+.topMenuList {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    list-style-type: none;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 2rem;    
+    padding-bottom: 0.5rem;    
+    border-bottom: 1px solid var(--almost-transparent-gray);
+}
+
+/* INICIO IMAGEM DE LOGIN E SELEÇÃO DE LOGIN */
+.userAccessAlignment {
+    display: flex;
+    padding: 0.1rem;
+}
+
+.imgUser {
+    margin-right: 7%;
+    border-radius: 50px;
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: cover;
+}
+/* FIM IMAGEM DE LOGIN E SELEÇÃO DE LOGIN */
+
+
+.topMenuList li a i {
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.topMenuList select {
+    background-color: transparent;
+    color: var(--text-secondary-color);
+    font-size: 1rem;
+}
+
+
+
+/* PESQUISA */
+
+.alignLeft {
+    margin-right: auto;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search input {
+    width: 12rem;
+}
+
+.search button{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+
+.search button i {
+    font-size: 1.2rem;
+    color: var(--text-secondary-color);
+}
+
+/* FIM MENU SUPERIOR */
+
+/* --------------------------------------------------------------------------------------- */
+
+
+/* INÍCIO MENU LATERAL */
+aside {
+    width: 70px;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    padding-top: 20px;
+    transition: width 0.3s ease;
+}
+
+.alignSideMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 6rem;
+    background-color: var(--secondary-color);
+}
+
+.alignSideMenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.alignSideMenu ul li {
+    padding: 0.8rem 0;
+}
+
+.alignSideMenu ul li a i {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.637);
+    transition: color 0.4s ease-in-out;
+}
+
+.alignSideMenu ul li a i:hover,
+.alignSideMenu ul li a i:active {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.sideMenuMain {
+    background-color: aqua;
+    width: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideMenuSecondary {
+    background-color: chocolate;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .sideMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoSideMenu {
+    width: 10rem;
+    height: auto;
+    padding: 0.5rem;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    display: block;
+    font-size: 18px;
+}
+
+aside ul li a:hover {
+    background-color: #34495e;
+    color: #fff;
+}
+
+ */
+
+ main {
+    margin-left: 70px;
+    padding: 20px;
+}
+
+.menu-icon {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    aside {
+        width: 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    aside ul li {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    main {
+        margin-left: 0;
+    }
+}

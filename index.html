@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Designer</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
+    <!-- NAVEGAÇÃO SUPERIOR -->
+    <header>
+        <nav>
+
+            <ul class="topMenuList">
+
+                <li class="userAccessAlignment">
+
+                    <img src="img/user/user1.webp" alt="Usuário Dr. Mônica" class="imgUser">
+                    <select name="menuSelect" id="menuSelect">
+                        <option value="User">Dr.Mônica</option>
+                    </select>
+
+                </li>
+                <li><a href="#" class="btnTopMenu"><i class='bx bx-bell' ></i></i></a></li>
+
+                <li>
+
+                    <select name="menuSelectLanguage" id="menuSelectLanguage">
+                        <option value="english">ENG</option>
+                        <option value="portuguese">PT</option>
+                    </select>
+
+                </li>
+                <li class="alignLeft">
+                    <form action="#" class="formSearch">
+
+                        <div class="search">
+                            <input type="text" placeholder="Search...">
+                            <button type="submit"><i class='bx bx-search-alt-2' ></i></button>
+                        </div>
+
+                    </form>
+                </li>
+            </ul>
+
+            <!-- MENU HAMBUERGUER -->
+            <div class="menu-icon">
+                <i class='bx bx-menu'></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- NAVEGAÇÃO LATERAL -->
+    <aside>
+        <section class="alignSideMenu">
+            <ul>
+                <li><a href="#"><i class='bx bx-briefcase-alt-2'></i></a></li>
+                <li><a href="#"><i class='bx bxs-user-detail'></i></a></li>
+                <li><a href="#"><i class='bx bxs-capsule'></i></a></li>
+                <li><a href="#"><i class='bx bx-desktop'></i></a></li>
+                <li><a href="#"><i class='bx bx-file'></i></a></li>
+            </ul>
+        </section>
+
+
+
+
+        <!-- <section class="alignSideMenu">
+            <div class="sideMenuMain">
+                <ul>
+                    <li><a href="#"></a><i class='bx bx-plus-medical'></i></li>
+                    <li><a href="#"></a><i class='bx bx-plus-medical'></i></li>
+                    <li><a href="#"></a><i class='bx bx-plus-medical'></i></li>
+                </ul>
+            </div>
     
+            <div class="sideMenuSecondary">
+                <ul>
+                    <li><a href="#"></a><i class='bx bx-plus-medical'></i></li>
+                </ul>
+            </div>
+        </section> -->
+
+        <!-- <div class="sideMenuSecondary">
+            <a href="#"><img src="img/logo.png" alt=""class="logoSideMenu"></a>
+            <ul>
+                <li><a href="#"><i class='bx bx-home'></i> Home</a></li>
+                <li><a href="#"><i class='bx bx-user'></i> Perfil</a></li>
+                <li><a href="#"><i class='bx bx-envelope'></i> Mensagens</a></li>
+                <li><a href="#"><i class='bx bx-cog'></i> Configurações</a></li>
+            </ul>
+        </div> -->
+    </aside>
+
+    <!-- CORPO -->
+    <main>
+        <h1>Bem-vindo</h1>
+        <p>Teste do Teste sendo Testado</p>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Teste © 2024</p>
+    </footer>
+
+    <script>
+        // Script para abrir e fechar o menu lateral
+        const menuIcon = document.querySelector('.menu-icon');
+        const aside = document.querySelector('aside');
+
+        menuIcon.addEventListener('click', () => {
+            aside.style.width = aside.style.width === '250px' ? '0' : '250px';
+        });
+    </script>
 </body>
+
 </html>
