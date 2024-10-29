@@ -11,7 +11,8 @@
 
 <body>
     <!-- NAVEGAÇÃO SUPERIOR -->
-    <header>
+    <header class="header-adjusted">
+
         <nav>
 
             <ul class="topMenuList">
@@ -46,75 +47,139 @@
                 </li>
             </ul>
 
-            <!-- MENU HAMBUERGUER -->
-            <div class="menu-icon">
-                <i class='bx bx-menu'></i>
-            </div>
-
         </nav>
+
     </header>
 
     <!-- NAVEGAÇÃO LATERAL -->
     <aside>
-        <section class="alignSideMenu">
-            <ul>
-                <li><a href="#"><i class='bx bx-briefcase-alt-2'></i></a></li>
-                <li><a href="#"><i class='bx bxs-user-detail'></i></a></li>
-                <li><a href="#"><i class='bx bxs-capsule'></i></a></li>
-                <li><a href="#"><i class='bx bx-desktop'></i></a></li>
-                <li><a href="#"><i class='bx bx-file'></i></a></li>
-            </ul>
-        </section>
 
+        <section class="globalSideMenu">
 
-
-
-        <!-- <section class="alignSideMenu">
-            <div class="sideMenuMain">
+            <div class="sideMenuPrimary">
                 <ul>
-                    <li><a href="#"></a><i class='bx bx-plus-medical'></i></li>
-                    <li><a href="#"></a><i class='bx bx-plus-medical'></i></li>
-                    <li><a href="#"></a><i class='bx bx-plus-medical'></i></li>
+                    <li><a href="#"> <i class='bx bx-briefcase-alt-2 iconActive'></i> </a></li>
+                    <li><a href="#"> <i class='bx bxs-user-detail'></i> </a></li>
+                    <li><a href="#"> <i class='bx bxs-capsule'></i> </a></li>
+                    <li><a href="#"> <i class='bx bx-desktop'></i> </a></li>
+                    <li><a href="#"> <i class='bx bx-file'></i> </a></li>
                 </ul>
             </div>
-    
+
             <div class="sideMenuSecondary">
                 <ul>
-                    <li><a href="#"></a><i class='bx bx-plus-medical'></i></li>
+                    <!-- TÍTULO DO MENU SELECIONADO -->
+                    <li class="disable"><span id="titleSideMenu">Hospital</span></li>
+
+
+                    <li><a class="btnSideActive" href="#"> <span>Dashboard</span> <i class='bx bx-chevron-right'></i> </a></li>
+                    <li><a href="#"> <span>Appointments</span> <i class='bx bx-chevron-right'></i> </a></li>
+                    <li><a href="#"> <span>Doctors</span> <i class='bx bx-chevron-right'></i> </a></li>
+                    <li><a href="#"> <span>Patients</span> <i class='bx bx-chevron-right'></i> </a></li>
+                    <li><a href="#"> <span>Room Alignments</span> <i class='bx bx-chevron-right'></i> </a></li>
+                    <li><a href="#"> <span>Payments</span> <i class='bx bx-chevron-right'></i> </a></li>
+                    <li><a href="#"> <span>Expenses Report</span> </a></li>
+                    <li><a href="#"> <span>Departments</span> </a></li>
+                    <li><a href="#"> <span>Insurance Company</span> </a></li>
+                    <li><a href="#"> <span>Events</span> </a></li>
+                    <li><a href="#"> <span>Chat</span> </a></li>
+                    
                 </ul>
             </div>
-        </section> -->
 
-        <!-- <div class="sideMenuSecondary">
-            <a href="#"><img src="img/logo.png" alt=""class="logoSideMenu"></a>
-            <ul>
-                <li><a href="#"><i class='bx bx-home'></i> Home</a></li>
-                <li><a href="#"><i class='bx bx-user'></i> Perfil</a></li>
-                <li><a href="#"><i class='bx bx-envelope'></i> Mensagens</a></li>
-                <li><a href="#"><i class='bx bx-cog'></i> Configurações</a></li>
-            </ul>
-        </div> -->
+        </section>
+
     </aside>
 
     <!-- CORPO -->
     <main>
-        <h1>Bem-vindo</h1>
-        <p>Teste do Teste sendo Testado</p>
+
+        <section class="mainPrimary">
+
+            <div class="sliderDashboard">
+
+                <h1>Bem-vindo</h1>
+                <p>Teste do Teste sendo Testado</p>
+
+            </div>
+
+            <div class="boxData">
+
+                <div class="wrapperBoxDash-3">
+
+                    <div class="boxItem">
+                        <h1>Bem-vindo</h1>
+                        <p>Teste do Teste sendo Testado</p>
+                    </div>
+    
+                    <div class="boxItem">
+                        <h1>Bem-vindo</h1>
+                        <p>Teste do Teste sendo Testado</p>
+                    </div>
+
+                    <div class="boxItem">
+                        <h1>Bem-vindo</h1>
+                        <p>Teste do Teste sendo Testado</p>
+                    </div>
+
+                    <div class="boxItem">
+                        <h1>Bem-vindo</h1>
+                        <p>Teste do Teste sendo Testado</p>
+                    </div>
+
+                    <div class="boxItem">
+                        <h1>Bem-vindo</h1>
+                        <p>Teste do Teste sendo Testado</p>
+                    </div>
+
+                    <div class="boxItem">
+                        <h1>Bem-vindo</h1>
+                        <p>Teste do Teste sendo Testado</p>
+                    </div>
+
+                </div>
+
+            </div>            
+
+        </section>
+
+        <section class="mainSecondary">
+
+            <div class="barCartDash">
+                <h1>Bem-vindo</h1>
+                <p>Teste do Teste sendo Testado</p>
+            </div>
+
+            <div class="calendarDash">
+                <h1>Bem-vindo</h1>
+                <p>Teste do Teste sendo Testado</p>
+            </div>
+
+        </section>
+
     </main>
 
     <!-- RODAPÉ -->
-    <footer>
+    <!-- <footer>
         <p>Teste © 2024</p>
-    </footer>
+    </footer> -->
 
     <script>
         // Script para abrir e fechar o menu lateral
-        const menuIcon = document.querySelector('.menu-icon');
+        // const menuIcon = document.querySelector('.menu-icon');
         const aside = document.querySelector('aside');
+        const header = document.querySelector('header');
 
         menuIcon.addEventListener('click', () => {
-            aside.style.width = aside.style.width === '250px' ? '0' : '250px';
+            if (aside.style.width === '350px') {
+                aside.style.width = '70px';
+                header.classList.remove('header-adjusted');
+            } else {
+                aside.style.width = '350px';
+                header.classList.add('header-adjusted');
+            }
         });
+
     </script>
 </body>
 
