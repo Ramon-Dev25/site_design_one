@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
 
 /* FONTE ENTRE 400 A 700 */
+
 * {
     margin: 0;
     padding: 0;
@@ -22,13 +23,19 @@
 }
 
 
-/* Estilos gerais */
 body {
     position: relative;
     margin: 0;
     background-color: var(--bg-color);
     color: var(--text-secondary-color);
     font-family: "Afacad", sans-serif;
+}
+
+
+main {
+    top: 0;
+    bottom: 0;
+    padding: 0 1rem 1rem 1rem;
 }
 
 /* INICIO MENU SUPERIOR */
@@ -41,12 +48,6 @@ header {
 .header-adjusted {
     margin-left: 350px;
     transition: margin-left 0.3s ease;
-}
-
-main {
-    top: 0;
-    bottom: 0;
-    padding: 0 1rem 1rem 1rem;
 }
 
 .topMenuList {
@@ -121,12 +122,12 @@ main {
     color: var(--text-secondary-color);
 }
 
-/* FIM MENU SUPERIOR */
+/* FIM DO MENU SUPERIOR */
 
 /* --------------------------------------------------------------------------------------- */
 
 
-/* INÍCIO MENU LATERAL */
+/* INÍCIO DO MENU LATERAL */
 
 .globalSideMenu {
     position: fixed;
@@ -176,7 +177,10 @@ main {
     color: white;
 }
 
+/* FIM DO MENU LATERAL */
+
 /* ------------------------------------------------------------------------------------------------------ */
+
 /* MENU LATERAL SEGUNDARIO */
 
 .sideMenuSecondary {
