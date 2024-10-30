@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Designer</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="plugins/fontawesome-free-6.5.2-web/css/all.min.css">
 </head>
 
 <body>
@@ -58,11 +58,11 @@
 
             <div class="sideMenuPrimary">
                 <ul>
-                    <li><a href="#"> <i class='bx bx-briefcase-alt-2 iconActive'></i> </a></li>
-                    <li><a href="#"> <i class='bx bxs-user-detail'></i> </a></li>
-                    <li><a href="#"> <i class='bx bxs-capsule'></i> </a></li>
-                    <li><a href="#"> <i class='bx bx-desktop'></i> </a></li>
-                    <li><a href="#"> <i class='bx bx-file'></i> </a></li>
+                    <li><a href="#"> <i class="fa-regular fa-hospital iconActive"></i></i> </a></li>
+                    <li><a href="#"> <i class="fa-solid fa-users"></i> </a></li>
+                    <li><a href="#"> <i class="fa-solid fa-capsules"></i> </a></li>
+                    <li><a href="#"> <i class="fa-solid fa-laptop-medical"></i> </a></li>
+                    <li><a href="#"> <i class="fa-solid fa-file-waveform"></i> </a></li>
                 </ul>
             </div>
 
@@ -98,44 +98,144 @@
 
             <div class="sliderDashboard">
 
-                <h1>Bem-vindo</h1>
-                <p>Teste do Teste sendo Testado</p>
+                <h3 class="titleSlider">Today Available</h3>
+                <span class="textSlider">From Fortis Hospital</span>
+
+                <div class="sliderImgAlignment">
+
+                    <i class="fa-solid fa-chevron-left solidIcon"></i>
+    
+                    <img class="imgSlider" width="200px" id="imgSlider1" src="img/user/user1.webp" alt="Imagem do Slider1">
+    
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </div>
+
+
+                <span class="nameSlider">Dr. Dazy Leon</span>
+                <span class="textDescriptionSlider"><strong>Available</strong> 11:00AM - 03:00PM</span>
 
             </div>
 
             <div class="boxData">
 
                 <div class="wrapperBoxDash-3">
-
-                    <div class="boxItem">
-                        <h1>Bem-vindo</h1>
-                        <p>Teste do Teste sendo Testado</p>
-                    </div>
     
+                    <!-- ELEMENTOS EM CAIXA / LINHA COM 3 BOX -->
                     <div class="boxItem">
-                        <h1>Bem-vindo</h1>
-                        <p>Teste do Teste sendo Testado</p>
+
+                        <div class="alignmentDataBoxItem">
+                            
+                            <div class="writtenElements">
+                                <h3 class="numberBoxDash">40</h3>
+                                <span class="textBoxDash"><strong>Appointments</strong></span>
+                            </div>
+    
+                            <div class="iconNumberBoxItem">
+                                <i class="fa-regular fa-calendar-check"></i>
+                            </div>
+
+                        </div>
+
+                        <span class="textDescritionBoxDash">Yesterday 32 Appointments</span>
+
+                    </div>
+                    
+                    <div class="boxItem">
+
+                        <div class="alignmentDataBoxItem">
+                            
+                            <div class="writtenElements">
+                                <h3 class="numberBoxDash">21</h3>
+                                <span class="textBoxDash"><strong>New Admit</strong></span>
+                            </div>
+    
+                            <div class="iconNumberBoxItem">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+
+                        </div>
+
+                        <span class="textDescritionBoxDash">Yesterday 11 Admit</span>
+
                     </div>
 
                     <div class="boxItem">
-                        <h1>Bem-vindo</h1>
-                        <p>Teste do Teste sendo Testado</p>
+
+                        <div class="alignmentDataBoxItem">
+                            
+                            <div class="writtenElements">
+                                <h3 class="numberBoxDash">14</h3>
+                                <span class="textBoxDash"><strong>Operations</strong></span>
+                            </div>
+    
+                            <div class="iconNumberBoxItem">
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </div>
+
+                        </div>
+
+                        <span class="textDescritionBoxDash">Yesterday 9 Operations</span>
+
                     </div>
 
                     <div class="boxItem">
-                        <h1>Bem-vindo</h1>
-                        <p>Teste do Teste sendo Testado</p>
+
+                        <div class="alignmentDataBoxItem">
+                            
+                            <div class="writtenElements">
+                                <h3 class="numberBoxDash">15</h3>
+                                <span class="textBoxDash"><strong>Doctors</strong></span>
+                            </div>
+    
+                            <div class="iconNumberBoxItem">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+
+                        </div>
+
+                        <span class="textDescritionBoxDash">Yesterday 9 Doctors</span>
+
                     </div>
 
                     <div class="boxItem">
-                        <h1>Bem-vindo</h1>
-                        <p>Teste do Teste sendo Testado</p>
+
+                        <div class="alignmentDataBoxItem">
+                            
+                            <div class="writtenElements">
+                                <h3 class="numberBoxDash">40</h3>
+                                <span class="textBoxDash"><strong>Appointments</strong></span>
+                            </div>
+    
+                            <div class="iconNumberBoxItem">
+                                <i class="fa-solid fa-user-nurse"></i>
+                            </div>
+
+                        </div>
+
+                        <span class="textDescritionBoxDash">Yesterday 32 Appointments</span>
+
                     </div>
 
                     <div class="boxItem">
-                        <h1>Bem-vindo</h1>
-                        <p>Teste do Teste sendo Testado</p>
+
+                        <div class="alignmentDataBoxItem">
+                            
+                            <div class="writtenElements">
+                                <h3 class="numberBoxDash">R$36.145,35</h3>
+                                <span class="textBoxDash"><strong>Earnings</strong></span>
+                            </div>
+    
+                            <div class="iconNumberBoxItem">
+                                <i class="fa-solid fa-hand-holding-dollar"></i>
+                            </div>
+
+                        </div>
+
+                        <span class="textDescritionBoxDash">Yesterday R$48.000,00</span>
+
                     </div>
+
 
                 </div>
 
